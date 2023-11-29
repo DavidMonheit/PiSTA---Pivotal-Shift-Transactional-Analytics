@@ -4,7 +4,7 @@
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+"Pivotal Shift Transactional Analytics (PiSTA) is a cutting-edge data analytics platform currently used by the Israeli Defense Forces' Home Front Command unit (Pikud HaOref). Designed to identify and analyze cities with outlier transactional behaviors based on shifts occurring around a pivotal date, PiSTA utilizes advanced algorithms and data science techniques. It effectively segregates transaction data into pre- and post-pivotal date periods, allowing for a comprehensive understanding of transactional dynamics and the identification of significant changes in spending patterns. The system's robust analysis aids in pinpointing cities with unusual transactional behaviors, offering valuable insights for the IDF. PiSTA stands out for its ability to reveal hidden patterns and anomalies in large and complex transactional datasets, making it an essential tool for data-driven decision-making."
 <br />
 
 
