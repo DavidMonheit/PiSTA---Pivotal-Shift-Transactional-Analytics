@@ -16,12 +16,52 @@
 </ul>
 
 <h2>Languages and Utilities Used</h2>
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
-
-<h2>Environments Used </h2>
-- <b>Windows 10</b> (21H2)
-
+<ul>
+<li><b>Python:</b> The primary programming language for scripting and analysis.</li>
+<li><b>numpy:</b> Utilized for numerical computations.</li>
+<li><b>pandas:</b> Employed for data manipulation and analysis.</li>
+<li><b>matplotlib:</b> Used for plotting and visualizing data.</li>
+<li><b>math:</b> For mathematical functions like ceiling calculations.</li>
+<li><b>os:</b> For operating system interactions, such as file path handling.</li>
+<li><b>sklearn:</b> A machine learning library used for clustering, nearest neighbors, and dimensionality reduction.</li>
+</ul>
+<h2>Environments Used</h2>
+<ul>
+<li><b>Jupyter Environment:</b> The code is tailored for execution in a Jupyter Notebook environment.</li>
+<li><b>Synapse System:</b> Intended for eventual deployment and running on the Synapse system, emphasizing data processing and visualization capabilities.</li>
+</ul>
+<h2>Algorithms Used</h2>
+<ul>
+<li><b>Pearson Distance Matrix Calculation:</b> Computes a distance matrix based on Pearson correlation coefficients, laying the foundation for understanding data relationships and distances.</li>
+<li><b>Isomap (Isometric Mapping):</b> Reduces the dimensionality of the dataset while preserving geodesic distances, simplifying the data structure for further analysis.</li>
+<li><b>DBSCAN (Density-Based Spatial Clustering of Applications with Noise):</b> Clusters the data based on density, effectively grouping closely packed points and identifying outliers in low-density regions.</li>
+<li><b>Nearest Neighbors (Using NearestNeighbors from sklearn.neighbors):</b> Identifies the nearest points in the dataset to a specific point or set of points, useful for detailed analysis within clusters.</li>
+</ul>
+<h2>Research Conducted</h2>
+<ul>
+    <li><b>Calculating City Distance Based on Time Series:</b> Thorough research was conducted to effectively calculate the distance matrix using various methods:
+        <ul>
+            <li><b>Euclidean Distance:</b> Found inadequate due to its focus on absolute differences in spending levels rather than trends. In cases where cities had proportional but different spending levels, Euclidean distance erroneously suggested high dissimilarity.</li>
+            <li><b>Dynamic Time Warping (DTW):</b> An improvement but still not ideal. Although better at aligning time series with varying lengths, DTW couldn't adequately capture the similarity in spending trends when absolute values differed significantly.</li>
+            <li><b>Cosine Similarity:</b> Provided better insights by focusing on the direction of spending trends, but still lacked in capturing the nuanced similarities in spending behavior.</li>
+            <li><b>Pearson Correlation:</b> The final choice for its focus on the correlation of spending trends, making it highly suitable for this analysis.</li>
+        </ul>
+    </li>
+    <li><b>Dimensionality Reduction:</b> Experimentation with several techniques to identify the most effective.
+        <ul>
+            <li><b>Principal Component Analysis (PCA):</b> Not optimal due to its linear nature, which could not capture the complex, nonlinear relationships in the transaction data.</li>
+            <li><b>Multidimensional Scaling (MDS):</b> Although it considers distances, MDS was less effective in preserving the local neighborhoods of data points, crucial for transaction data analysis.</li>
+            <li><b>Isomap:</b> Chosen as it effectively maintained geodesic distances in reduced dimensions, crucial for analyzing the nonlinear and complex structure of the transaction data.</li>
+        </ul>
+    </li>
+    <li><b>Clustering Methods:</b> A variety of techniques were tested to find the most suitable one.
+        <ul>
+            <li><b>Hierarchical Clustering (Complete Linkage):</b> Found ineffective due to its tendency to be influenced by outliers and not suitably capturing the intrinsic data structure of city transactions.</li>
+            <li><b>K-Means:</b> Not chosen due to its limitations in handling the non-spherical shapes and varying densities of clusters typical in transaction data.</li>
+            <li><b>DBSCAN:</b> Selected for its proficiency in identifying clusters of arbitrary shapes and densities, which is essential in the context of transaction data.</li>
+        </ul>
+    </li>
+</ul>
 <h2>Program walk-through:</h2>
 <p align="center">
 Launch the utility: <br/>
