@@ -37,6 +37,18 @@
 <li><b>DBSCAN (Density-Based Spatial Clustering of Applications with Noise):</b> Clusters the data based on density, effectively grouping closely packed points and identifying outliers in low-density regions.</li>
 <li><b>Nearest Neighbors (Using NearestNeighbors from sklearn.neighbors):</b> Identifies the nearest points in the dataset to a specific point or set of points, useful for detailed analysis within clusters.</li>
 </ul>
+
+<h2>Parameters</h2>
+<ul>
+    <li><b>Pivot Date:</b> A critical date used to segment the transaction data for comparative analysis. Transactions are analyzed separately for periods before and after this date to understand changes over time as well as filter them.</li>
+    <li><b>Threshold Percent for Missing Data:</b> A parameter defining the acceptable percentage of missing data in city transactions. Cities exceeding this threshold are excluded from the analysis to maintain data integrity.</li>
+    <li><b>Transaction Category:</b> Focuses the analysis on a specific category of transactions, allowing for more targeted insights into spending patterns within that category.</li>
+    <li><b>Clustering Sensitivity (EPS Value for DBSCAN):</b> Determines the sensitivity of the DBSCAN clustering algorithm. A crucial parameter for identifying clusters with varying densities in the data.</li>
+    <li><b>Minimum Samples for DBSCAN:</b> Specifies the minimum number of samples (or total weight) in a neighborhood for a point to be considered a core point. This parameter is integral to the DBSCAN algorithm's ability to form clusters.</li>
+    <li><b>Number of Components for Isomap:</b> Dictates the number of dimensions to which the data is reduced, influencing the granularity of the dimensionality reduction process.</li>
+    <li><b>Number of Neighbors in Nearest Neighbors Analysis:</b> Sets the number of neighbors to consider in the nearest neighbors analysis, impacting the identification of closely related observations within the data.</li>
+</ul>
+
 <h2>Research Conducted</h2>
 <ul>
     <li><b>Calculating City Distance Based on Time Series:</b> Thorough research was conducted to effectively calculate the distance matrix using various methods:
