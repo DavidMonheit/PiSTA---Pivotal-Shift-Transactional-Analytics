@@ -73,6 +73,9 @@
             <li><b>DBSCAN:</b> Selected for its proficiency in identifying clusters of arbitrary shapes and densities, which is essential in the context of transaction data.</li>
         </ul>
     </li>
+ 
+   <li><b>Silhouette Method:</b> Utilized to optimize the clustering process. This method assesses the quality of clusters formed by the algorithms, guiding adjustments to parameters like the number of clusters or the distance threshold in DBSCAN.</li>
+   <li><b>Optuna:</b> Employed for hyperparameter optimization. Optuna helps in fine-tuning various parameters, enhancing the performance and accuracy of algorithms like DBSCAN and Isomap.</li>
 </ul>
 <h2>Program walk-through:</h2>
 <p align="center">
