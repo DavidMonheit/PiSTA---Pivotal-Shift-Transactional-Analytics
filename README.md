@@ -79,32 +79,41 @@
 </ul>
 <h2>Program walk-through:</h2>
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+A snippet of the the dataset: <br/>
+<img src="https://i.imgur.com/J2zErNc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<img src="https://i.imgur.com/qAxm70G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+A snippet if the distance matrix of dimenstion N*N calculated by Pearson timeseries distance algorithm: <br/>
+<img src="https://i.imgur.com/WA5v2ox.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+The Plot after dimension reduction to 2D using ISOmap reduction algorithm:  <br/>
+<img src="https://i.imgur.com/Sm8CoDM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+An enlarged view of a dense area of cities, indicating strong spending pattern simmilarity:  <br/>
+<img src="https://i.imgur.com/wDHsi36.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+The outliers based on the 2d scatter resulting from the DBscan Cluster algorithm:  <br/>
+<img src="https://i.imgur.com/xBKEr7p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+A zoomed in view showing אשכול and מטה אשר are outliers:  <br/>
+<img src="https://i.imgur.com/AoYnmLP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br />
+Outliers and their corresponding k closest cities (cities comparable to the outlier city indicating where the outliers should have been):  <br/>
+<img src="https://i.imgur.com/Z8brUdM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br />
+After finding all outliers and their KNN's, each outlier's timeseries is compared to its neighbors for further examination. Here's some examples:  <br/>
+<img src="https://i.imgur.com/p39B672.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br/>
+<img src="https://i.imgur.com/RVDPzs9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <br/>
+ A list of the outliers found and their KNN's:  <br/>
+<img src="https://i.imgur.com/t2VegPT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
